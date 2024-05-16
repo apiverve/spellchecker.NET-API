@@ -71,7 +71,7 @@ Using the API client, you can perform requests to the API.
 
 ```
 var queryOptions = new spellcheckerQueryOptions{
-  "text": "I neeed to call my friend on telephine today!"
+  text: "I neeed to call my friend on telephine today!"
 };
 ```
 
