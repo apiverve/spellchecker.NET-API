@@ -70,8 +70,8 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new spellcheckerQueryOptions{
-  text: "I neeed to call my friend on telephine today!"
+var queryOptions = new spellcheckerQueryOptions {
+  text = "I neeed to call my friend on telephine today!"
 };
 ```
 
