@@ -14,7 +14,7 @@
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageProjectUrl>https://apiverve.com/?utm_source=nuget</PackageProjectUrl>
     <SignAssembly>False</SignAssembly>
-    <Description>Spell Checker is a simple tool for checking spelling. It returns the corrected text.</Description>
+    <Description>Spell Checker is a simple tool for checking spelling in a given body of text. It returns correction suggestions</Description>
     <RepositoryUrl>https://github.com/apiverve/spellchecker.NET-API</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>spell checker; spell check; spell checker api; spell check api; spell checker tool</PackageTags>
