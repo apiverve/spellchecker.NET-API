@@ -4,43 +4,46 @@ using Newtonsoft.Json;
 
 namespace APIVerve
 {
-public class corrections
-{
-    [JsonProperty("word")]
-    public string word { get; set; }
+    /// <summary>
+    /// Corrections data
+    /// </summary>
+    public class Corrections
+    {
+        [JsonProperty("word")]
+        public string Word { get; set; }
 
-    [JsonProperty("suggestions")]
-    public string[] suggestions { get; set; }
+        [JsonProperty("suggestions")]
+        public string[] Suggestions { get; set; }
 
-}
+    }
+    /// <summary>
+    /// Data data
+    /// </summary>
+    public class Data
+    {
+        [JsonProperty("spellPass")]
+        public bool SpellPass { get; set; }
 
-public class data
-{
-    [JsonProperty("spellPass")]
-    public bool spellPass { get; set; }
+        [JsonProperty("mispellingsFound")]
+        public int MispellingsFound { get; set; }
 
-    [JsonProperty("mispellingsFound")]
-    public int mispellingsFound { get; set; }
+        [JsonProperty("corrections")]
+        public Corrections[] Corrections { get; set; }
 
-    [JsonProperty("corrections")]
-    public corrections[] corrections { get; set; }
+    }
+    /// <summary>
+    /// API Response object
+    /// </summary>
+    public class ResponseObj
+    {
+        [JsonProperty("status")]
+        public string Status { get; set; }
 
-}
+        [JsonProperty("error")]
+        public object Error { get; set; }
 
-public class ResponseObj
-{
-    [JsonProperty("status")]
-    public string status { get; set; }
+        [JsonProperty("data")]
+        public Data Data { get; set; }
 
-    [JsonProperty("error")]
-    public object error { get; set; }
-
-    [JsonProperty("data")]
-    public data data { get; set; }
-
-    [JsonProperty("code")]
-    public int code { get; set; }
-
-}
-
+    }
 }
