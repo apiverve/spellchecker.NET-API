@@ -5,6 +5,6 @@ using System.Text;
 namespace APIVerve
 {
     public class SpellCheckerQueryOptions {
-public string text { get; set; }
+public string Text { get; set; }
 }
 }
